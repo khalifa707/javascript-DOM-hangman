@@ -1,5 +1,11 @@
 * {
   background-color: #5484FF;
+  color: white;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "SUSE", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
