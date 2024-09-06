@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman Game</title>
+    <link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+<h1>Hangman</h1>
+<p>find the hidden word - enter a letter</p>
+<div class="game-container">
+    <svg fill="none" height="304" viewBox="0 0 279 304" width="279" xmlns="http://www.w3.org/2000/svg">
+        <path class="base" d="M0 301H90H180" stroke="white" stroke-width="5"/>
+        <path class="stand" d="M88 3H158H228" stroke="white" stroke-width="5"/>
+        <path class="roof" d="M90 1V301" stroke="white" stroke-width="5"/>
+        <path class="hang" d="M226 1V51" stroke="white" stroke-width="5"/>
+        <circle class="head" cx="226" cy="76" r="22.5" stroke="white" stroke-width="5"/>
+        <path class="body" d="M226 101V181" stroke="white" stroke-width="5"/>
+        <path class="left-leg" d="M226.5 179L176 234" stroke="white" stroke-width="5"/>
+        <path class="right-leg" d="M226 179L276.5 234" stroke="white" stroke-width="5"/>
+        <path class="left-arm" d="M226.5 114L176 154" stroke="white" stroke-width="5"/>
+        <path class="right-arm" d="M226 114L276.5 154" stroke="white" stroke-width="5"/>
+    </svg>
+
+    <div class="wrong-letters-containers">
+        <div id="wrong-letters">
+            <p>Wrong</p>
+            <span>e,r,t,y</span>
+        </div>
+    </div>
+    <div class="word" id="word">
+        <div class="letter">h</div>
+        <div class="letter">e</div>
+        <div class="letter">l</div>
+        <div class="letter">l</div>
+        <div class="letter">o</div>
+    </div>
+
+</div>
+<div class="popup-container" id="popup-container">
+    <div class="popup">
+        <h2 id="final-message">You Have Won</h2>
+        <button id="play-button">Play Again !!</button>
+    </div>
+</div>
+<div class="notification-container" id="notification-container">
+    <p>You have already entered this letter</p>
+</div>
+</body>
+</html>
